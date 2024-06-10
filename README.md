@@ -36,34 +36,34 @@ The 3 user roles are Candidate , Employer and Admin
     - create a template 
 
 ## Setup
-   - https://github.com/virajcoder/jobportal.git
+    - https://github.com/virajcoder/jobportal.git
 
 ## Step 1: Python aur Django Instal
-   1. Python Install karein:
-      - [Python.org ]
-   2. Django Install karein:
+    1. Python Install karein:
+       - Python.org 
+    3. Django Install karein:
       - pip install django
      
 ## Step 2: Django Project Create 
-  1. Project Start :
+    1. Project Start :
       * Django project start karne ke liye, command prompt ya terminal par yeh command run karein:
           - django-admin startproject myproject
           - cd myproject
       
 ## Step 3: Django App Create
-  1. App Start:
+    1. App Start:
         * Django app banane ke liye, aapko project directory ke andar rehkar yeh command run karni hogi:
             - python manage.py startapp myapp
       
 ## Step 4: Models Define karein
-  1. Models Define karein:
+    1. Models Define karein:
       * myapp/models.py file ko open karein aur models define karein.
-  2. Migrations Create aur Apply karein:
+    2. Migrations Create aur Apply karein:
       - python manage.py makemigrations
       - python manage.py migrate
     
 ## Step 6: Views aur URLs Configure karein
-  1. Views Define karein:
+    1. Views Define karein:
       * myapp/views.py file ko open karein aur views define karein.
           - from django.shortcuts import render
           - from .models import Post
@@ -71,7 +71,7 @@ The 3 user roles are Candidate , Employer and Admin
           - def post_list(request):
              - posts = Post.objects.all()
              - return render(request, 'myapp/post_list.html', {'posts': posts})
- 2. URLs Configure karein:
+    2. URLs Configure karein:
       * myapp ke liye ek urls.py file banayein aur usmein URLs define karein
             - from django.urls import path
             - from . import views
@@ -88,12 +88,12 @@ The 3 user roles are Candidate , Employer and Admin
 
 
 ## Step 7: Templates Create karein
-  1. Template Folder aur Files Banayein:
+    1. Template Folder aur Files Banayein:
       * myapp directory ke andar templates folder aur uske andar myapp folder create karein.
       * myapp/templates/myapp/post_list.html file banayein
     
 ## Step 8: Development Server Start karein
-   - python manage.py runserver
+    - python manage.py runserver
 
 
 
